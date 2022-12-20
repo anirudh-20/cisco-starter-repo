@@ -1,0 +1,30 @@
+.Banner {
+    height: fit-content;
+    font-size: min(3rem , max(7vh, 6vw));
+    font-weight: 100;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: white;
+    padding: 0.5rem 0.5rem 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  @supports (backdrop-filter: none) {
+    .bg-filter {
+      background-color: #000000c0;
+      backdrop-filter: blur(12px);
+    }
+  }
+  
+  @supports not (backdrop-filter: none) {
+    .bg-filter {
+      background-color: #000;
+    }
+  }
+
+
