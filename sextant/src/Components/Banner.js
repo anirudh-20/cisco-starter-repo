@@ -4,7 +4,7 @@ import './Banner.css';
 export default function Banner () {
 
   const [isSmall, setSmall] = useState(false);
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const distanceY = window.pageYOffset || document.documentElement.scrollTop;
@@ -12,7 +12,6 @@ export default function Banner () {
 
       if (distanceY > threshold) setSmall(true);
       else setSmall(false);
-      console.log(distanceY, isSmall);
     };
 
     window.addEventListener('scroll', handleScroll);

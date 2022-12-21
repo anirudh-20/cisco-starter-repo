@@ -8,6 +8,7 @@
     border-radius: 1rem;
     box-sizing: border-box;
     z-index: 2;
+    overflow: hidden;
 }
 
 .title {
@@ -17,7 +18,11 @@
 
 .content {
     font-weight: 200;
-    font-size: max(6vh, 3vw);
+    font-size: min(2.3em , max(6vh, 3vw));
+}
+
+.lengthy {
+    font-size: min(1.58em, max(3.33vh, 3.33vw));
 }
 
 .Bliss {

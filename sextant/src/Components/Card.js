@@ -11,10 +11,11 @@ export default function Card ({
     value,
     metric
 }) {
+  const chars = value.toString().length + metric.toString().length;
   return(
     <div className={`Card ` + pickRandom(cardThemes)}>
       <div className="title">{name}</div>
-      <div className="content">{value} {metric}</div>
+      <div className={`content` + (chars > 15 ? ' lengthy' : '')}>{value} {metric}</div>
     </div>
   )
 }
