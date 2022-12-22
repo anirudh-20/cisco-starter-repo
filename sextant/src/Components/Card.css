@@ -19,6 +19,7 @@
 .content {
     font-weight: 200;
     font-size: min(2.3em , max(6vh, 3vw));
+    overflow-wrap: anywhere;
 }
 
 .lengthy {
