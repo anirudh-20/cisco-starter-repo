@@ -1,5 +1,5 @@
 import React from "react";
-import { IPCard } from "./Card";
+import { IPCard, LatencyCard } from "./Card";
 import './Exhibit.css';
 
 export default function Exhibit () {
@@ -7,6 +7,7 @@ export default function Exhibit () {
     <div className="Exhibit">
         <IPCard version="ipv4"/>
         <IPCard version="ipv6"/>
+        <LatencyCard/>
     </div>
   )
 }
